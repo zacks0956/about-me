@@ -1,34 +1,51 @@
+:root {
+  --primary-bg: linear-gradient(135deg, #0a1428 0%, #1e2328 50%, #463714 100%);
+  --secondary-bg: rgba(16, 26, 40, 0.95);
+  --accent-gradient: linear-gradient(135deg, #c8aa6e 0%, #f0e6d2 100%);
+  --primary-color: #cdbe91;
+  --accent-color: #c8aa6e;
+  --highlight-color: #f0e6d2;
+  --dark-overlay: rgba(16, 26, 40, 0.8);
+  --light-overlay: rgba(30, 35, 40, 0.8);
+  --transition-smooth: all 0.3s ease;
+  --transition-opacity: opacity 1s ease-in-out;
+  --border-accent: 1px solid #c8aa6e;
+  --shadow-light: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-heavy: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
 .body {
   font-family: "Philosopher", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #0a1428 0%, #1e2328 50%, #463714 100%);
+  background: var(--primary-bg);
   background-attachment: fixed;
-  color: #cdbe91;
+  color: var(--primary-color);
 }
 a {
-  color: #c8aa6e;
+  color: var(--accent-color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: var(--transition-smooth);
 }
+
 .header {
-  background: rgba(16, 26, 40, 0.95);
+  background: var(--secondary-bg);
   backdrop-filter: blur(10px);
-  color: #cdbe91;
+  color: var(--primary-color);
   padding: 2rem 0;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid #c8aa6e;
+  box-shadow: var(--shadow-light);
+  border-bottom: var(--border-accent);
   z-index: 1000;
 }
 
 .header h1 {
-  background: linear-gradient(135deg, #c8aa6e 0%, #f0e6d2 100%);
+  background: var(--accent-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,26 +88,26 @@ a {
 }
 
 .nav ul li a {
-  color: #cdbe91;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  transition: all 0.3s ease;
+  transition: var(--transition-smooth);
   border: 1px solid transparent;
 }
 
 .nav ul li a:hover {
   background: rgba(200, 170, 110, 0.2);
-  border-color: #c8aa6e;
-  color: #f0e6d2;
+  border-color: var(--accent-color);
+  color: var(--highlight-color);
 }
 
 /* ナビゲーションのアクティブ状態 */
 .nav ul li a.active {
   background: rgba(200, 170, 110, 0.3);
-  border-color: #c8aa6e;
-  color: #f0e6d2;
+  border-color: var(--accent-color);
+  color: var(--highlight-color);
   font-weight: 600;
 }
 
@@ -436,7 +453,7 @@ section h2 {
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
-  transition: opacity 1s ease-in-out;
+  transition: var(--transition-opacity);
 }
 
 /* 経歴セクションのスタイル */
@@ -594,9 +611,5 @@ section h2 {
 
   .career-box {
     padding: 1.5rem;
-  }
-
-  .video-background video {
-    opacity: 0.2;
   }
 }
