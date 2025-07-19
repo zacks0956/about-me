@@ -14,6 +14,70 @@
   --shadow-heavy: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
+/* League of Legends 背景切り替えスタイル */
+.lol-background-switcher {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  filter: brightness(0.4);
+}
+
+.bg-image.active {
+  opacity: 1;
+}
+
+/* 5秒間隔でアニメーション */
+.bg-image-1 {
+  animation: switchBackground1 10s infinite;
+}
+
+.bg-image-2 {
+  animation: switchBackground2 10s infinite;
+}
+
+@keyframes switchBackground1 {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes switchBackground2 {
+  0%,
+  45% {
+    opacity: 0;
+  }
+  50%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .body {
   font-family: "Philosopher", sans-serif;
   line-height: 1.6;
@@ -293,7 +357,6 @@ section h2 {
   border: 2px dashed rgba(200, 170, 110, 0.6);
   border-radius: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
@@ -456,94 +519,28 @@ section h2 {
   transition: var(--transition-opacity);
 }
 
-/* 経歴セクションのスタイル */
-.career-section {
-  margin-top: 3rem;
+/* 画像背景のスタイル */
+.image-background {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 }
 
-.career-box {
-  background: rgba(16, 26, 40, 0.95);
-  backdrop-filter: blur(15px);
-  border: 2px solid #c8aa6e;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s ease;
+.image-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: var(--transition-opacity);
 }
 
-.career-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(200, 170, 110, 0.3);
-  border-color: #f0e6d2;
-}
-
-.career-box h3 {
-  text-align: center;
-  margin: 0 0 2rem 0;
-  color: #f0e6d2;
-  font-size: 2rem;
-  font-weight: 600;
-  background: linear-gradient(135deg, #c8aa6e 0%, #f0e6d2 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.career-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.career-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 2rem;
-  padding: 1.5rem;
-  background: rgba(30, 35, 40, 0.8);
-  border-radius: 15px;
-  border-left: 4px solid #c8aa6e;
-  transition: all 0.3s ease;
-}
-
-.career-item:hover {
-  background: rgba(200, 170, 110, 0.2);
-  transform: translateX(10px);
-  border-left-color: #f0e6d2;
-}
-
-.career-year {
-  flex: 0 0 80px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #c8aa6e;
-  text-align: center;
-  padding: 0.5rem;
-  background: rgba(200, 170, 110, 0.2);
-  border-radius: 10px;
-  border: 1px solid #c8aa6e;
-}
-
-.career-content {
-  flex: 1;
-}
-
-.career-content h4 {
-  margin: 0 0 0.5rem 0;
-  color: #f0e6d2;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
-.career-content p {
-  margin: 0;
-  color: #cdbe91;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* レスポンシブ対応 */
 @media (max-width: 600px) {
   .header,
   .footer {
@@ -597,19 +594,19 @@ section h2 {
   .game-info {
     padding: 1rem;
   }
+}
 
-  .career-item {
-    flex-direction: column;
-    gap: 1rem;
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .career-year {
-    flex: none;
-    width: 100%;
-    text-align: center;
+  .game-image {
+    height: 180px;
   }
 
-  .career-box {
-    padding: 1.5rem;
+  .game-info {
+    padding: 1rem;
   }
 }
