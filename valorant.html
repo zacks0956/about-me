@@ -32,55 +32,98 @@
   </header>
 
   <body class="body">
+    <!-- 背景画像の切り替え -->
+    <div class="lol-background-switcher">
+      <img
+        src="images/valorant-home.jpg"
+        alt="Valorant Background 1"
+        class="bg-image bg-image-1 active"
+      />
+      <img
+        src="images/valorant-home.jpg"
+        alt="Valorant Background 2"
+        class="bg-image bg-image-2"
+      />
+    </div>
+
     <div class="cover cover-home">
       <h1>VALORANT</h1>
     </div>
     <main>
-      <section id="valorant" class="combined-section">
-        <h2>VALORANT</h2>
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/valorant-home.jpg" alt="Valorant" />
+      <div class="game-introduction">
+        <h2>Valorantとは</h2>
+        <p>
+          Valorantは、Riot Gamesが開発したタクティカルFPSゲームです。<br />
+          5対5のチーム戦で、プレイヤーは様々な特殊能力を持つエージェントから1人を選択し、<br />
+          正確なエイムと戦略的思考を駆使して敵チームのスパイクサイトを攻撃・防衛します。<br /><br />
+
+          このゲームの魅力は、従来のFPSの射撃技術に加えて、<br />
+          エージェントそれぞれが持つユニークなアビリティを組み合わせた戦術性にあります。<br />
+          チームワークとコミュニケーションが勝利の鍵となる、<br />
+          高い競技性を持つeスポーツタイトルです。
+        </p>      </div>
+      
+      <h2>使用エージェント</h2>
+      
+      <div class="character-introduction">
+        <p>
+          私がValorantで愛用している6人のエージェントたちです。<br />
+          それぞれ異なる役割と戦略性を持ち、様々な場面で活躍してくれます。<br />
+          デュエリストからコントローラーまで幅広いロールをカバーし、チーム戦での駆け引きを楽しんでいます。<br />
+          各エージェントの特徴と戦術的な使い方を習得することで、より深いゲーム体験を味わっています。
+        </p>
+      </div>
+
+      <div class="multi-menu-grid">
+        <div class="menu-item-link">
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img src="images/jett-icon.png" alt="ジェット" />
             </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>Valorantについて</h3>
-              <p>
-                Riot Gamesが開発したタクティカルFPS。<br />
-                5vs5のチーム戦で、エージェントそれぞれが持つ特殊能力を使いながら戦略的に戦います。<br />
-                正確なエイムとチームワークが勝利の鍵となります。<br />
-                競技性が高く、プロシーンも盛り上がっているゲームです。
-              </p>
-            </div>
-            <div class="hobbies-text">
-              <h3>好きなポイント</h3>
-              <ul>
-                <li>🎯 正確なエイムの重要性</li>
-                <li>👥 チームワークの戦略性</li>
-                <li>⚡ エージェントの特殊能力</li>
-                <li>🏆 競技性の高さ</li>
-                <li>🔥 スリリングな試合展開</li>
-              </ul>
-            </div>
+            <h3>ジェット</h3>
+            <p>風のデュエリスト</p>
           </div>
         </div>
-        <div style="text-align: center; margin-top: 2rem">
-          <a
-            href="games.html"
-            style="
-              background: rgba(200, 170, 110, 0.2);
-              padding: 1rem 2rem;
-              border-radius: 20px;
-              border: 1px solid #c8aa6e;
-              color: #f0e6d2;
-              text-decoration: none;
-              transition: all 0.3s ease;
-            "
-            >← ゲーム一覧に戻る</a
-          >
+
+        <div class="menu-item-link">
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img src="images/breech-icon.jpg" alt="ブリーチ" />
+            </div>
+            <h3>ブリーチ</h3>
+            <p>衝撃のコントローラー</p>
+          </div>
         </div>
+
+        <div class="menu-item-link">
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img src="images/gekkko-icon.jpeg" alt="ゲッコ" />
+            </div>
+            <h3>ゲッコー</h3>
+            <p>生物の使役者</p>
+          </div>
+        </div>
+
+        <div class="menu-item-link">
+          <div class="menu-item">
+            <div class="menu-icon">
+              <img src="images/fade.jpg" alt="フェイド" />
+            </div>
+            <h3>フェイド</h3>
+            <p>影の使役者</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="games.html" class="back-to-games-btn">
+          ← ゲーム一覧に戻る
+        </a>
+      </div>
+
       </section>
     </main>
     <footer class="footer">
