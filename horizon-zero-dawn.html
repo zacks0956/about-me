@@ -32,46 +32,73 @@
   </header>
 
   <body class="body">
+    <!-- 背景画像の切り替え -->
+    <div class="lol-background-switcher">
+      <img
+        src="images/background/horizon-background-1.jpg"
+        alt="Horizon Background 1"
+        class="bg-image bg-image-1 active"
+      />
+      <img
+        src="images/background/horizon-background-2.jpg"
+        alt="Horizon Background 2"
+        class="bg-image bg-image-2"
+      />
+    </div>
+
     <div class="cover cover-home">
       <h1>HORIZON ZERO DAWN</h1>
     </div>
     <main>
-      <section id="horizon" class="combined-section">
-        <h2>HORIZON ZERO DAWN</h2>
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/horizon.png" alt="Horizon Zero Dawn" />
+      <div class="game-introduction">
+        <h2>Horizon Zero Dawnについて</h2>
+        <p>
+          機械獣が支配する世界を舞台にしたオープンワールドアクションRPG。<br />
+          主人公アーロイとなって、美しくも危険な世界を探索します。<br />
+          機械獣との戦闘は弓矢を使った戦略的なアクションが楽しめます。<br />
+          壮大なストーリーと美しいグラフィックが魅力的な作品です。
+        </p>
+      </div>
+
+      <!-- ゲームスライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/slide/horizonslide1.jpg" alt="Horizon Slide 1" class="slide-image active">
+          <img src="images/slide/horizonslide2.jpg" alt="Horizon Slide 2" class="slide-image">
+          <img src="images/slide/horizonslide3.jpg" alt="Horizon Slide 3" class="slide-image">
+          <img src="images/slide/horizonslide4.jpg" alt="Horizon Slide 4" class="slide-image">
+          <img src="images/slide/horizonslide5.jpg" alt="Horizon Slide 5" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
             </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>Horizon Zero Dawnについて</h3>
-              <p>
-                機械獣が支配する世界を舞台にしたオープンワールドアクションRPG。<br />
-                主人公アーロイとなって、美しくも危険な世界を探索します。<br />
-                機械獣との戦闘は弓矢を使った戦略的なアクションが楽しめます。<br />
-                壮大なストーリーと美しいグラフィックが魅力的な作品です。
-              </p>
-            </div>
-            <div class="hobbies-text">
-              <h3>好きなポイント</h3>
-              <ul>
-                <li>🤖 独特な機械獣の世界観</li>
-                <li>🏹 戦略的な弓矢アクション</li>
-                <li>🌍 広大なオープンワールド</li>
-                <li>📖 壮大なストーリー</li>
-                <li>🎨 息を呑む美しいグラフィック</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
-        <div class="back-to-games-container">
-          <a href="games.html" class="back-to-games-btn">
-            ← ゲーム一覧に戻る
-          </a>
-        </div>
-      </section>
+      </div>
+
+      <div class="game-introduction">
+        <h2>好きなポイント</h2>
+        <p>
+          🤖 独特な機械獣の世界観<br />
+          🏹 戦略的な弓矢アクション<br />
+          🌍 広大なオープンワールド<br />
+          📖 壮大なストーリー<br />
+          🎨 息を呑む美しいグラフィック
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="games.html" class="back-to-games-btn">
+          ← ゲーム一覧に戻る
+        </a>
+      </div>
     </main>
     <footer class="footer">
       <p>&copy; 2024 わたしの自己紹介サイト</p>

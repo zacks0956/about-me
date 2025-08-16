@@ -32,61 +32,85 @@
   </header>
 
   <body class="body">
+    <!-- 背景画像の切り替え -->
+    <div class="lol-background-switcher">
+      <img
+        src="images/background/SF6-background.jpg"
+        alt="SF6 Background 1"
+        class="bg-image bg-image-1 active"
+      />
+      <img
+        src="images/deejay.jpg"
+        alt="SF6 Background 2"
+        class="bg-image bg-image-2"
+      />
+    </div>
+
     <div class="cover cover-home">
       <h1>STREET FIGHTER 6</h1>
     </div>
     <main>
-      <section id="sf6" class="combined-section">
-        <h2>STREET FIGHTER 6</h2>
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img
-                src="images/sf6-dee-jay-speedy-maracas.jpeg"
-                alt="Street Fighter 6"
-              />
-            </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>Street Fighter6とは</h3>
-              <p>
-                格闘ゲームの最高峰であるストリートファイターシリーズの最新作。<br />
-                新システム「ドライブシステム」により、より戦略的で奥深い戦いが楽しめます。<br />
-                豊富なキャラクターと美しいグラフィックで対戦が白熱します。<br />
-                コンボや読み合いの駆け引きが病みつきになるゲームです。
-              </p>
-            </div>
-            <div class="profile-text">
-              <h3>使用キャラクター</h3>
-              <p>
-                私のメインキャラクターは「ディージェイ」です。<br />
-                彼の攻めは1,2を争う程速く、気づけば画面端に運ばれているのです。<br />
-                そのスピード感とコンボの爽快感がたまりません。<br />
-                また、ディージェイは技を出すときに幼児退行したり、<br />
-                ずっと陽気なことを言っているので対戦中も笑いが生まれます。
-              </p>
-            </div>
+      <div class="game-introduction">
+        <h2>Street Fighter 6とは</h2>
+        <p>
+          格闘ゲームの最高峰であるストリートファイターシリーズの最新作。<br />
+          新システム「ドライブシステム」により、より戦略的で奥深い戦いが楽しめます。<br />
+          豊富なキャラクターと美しいグラフィックで対戦が白熱します。<br />
+          コンボや読み合いの駆け引きが病みつきになるゲームです。
+        </p>
+      </div>
 
-            <div class="hobbies-text">
-              <h3>好きなポイント</h3>
-              <ul>
-                <li>🥊 キャラ性能で圧倒し合う所</li>
-                <li>⚡ スピーディーな対戦</li>
-                <li>🎨 美しいグラフィック</li>
-                <li>🎮 多彩なキャラクター</li>
-                <li>🔥 熱い読み合い</li>
-                <li>👴 期間を空けるとブランクが顕著にでること</li>
-              </ul>
+      <!-- ゲームスライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/slide/sf6-slide1.jpg" alt="SF6 Slide 1" class="slide-image active">
+          <img src="images/slide/sf6-slide2.jpg" alt="SF6 Slide 2" class="slide-image">
+          <img src="images/slide/sf6-slide3.jpg" alt="SF6 Slide 3" class="slide-image">
+          <img src="images/slide/sf6-slide4.jpg" alt="SF6 Slide 4" class="slide-image">
+          <img src="images/slide/sf6-slide5.jpg" alt="SF6 Slide 5" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
             </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
-        <div class="back-to-games-container">
-          <a href="games.html" class="back-to-games-btn">
-            ← ゲーム一覧に戻る
-          </a>
-        </div>
-      </section>
+      </div>
+
+      <div class="game-introduction">
+        <h2>使用キャラクター</h2>
+        <p>
+          私のメインキャラクターは「ディージェイ」です。<br />
+          彼の攻めは1,2を争う程速く、気づけば画面端に運ばれているのです。<br />
+          そのスピード感とコンボの爽快感がたまりません。<br />
+          また、ディージェイは技を出すときに幼児退行したり、<br />
+          ずっと陽気なことを言っているので対戦中も笑いが生まれます。
+        </p>
+      </div>
+
+      <div class="game-introduction">
+        <h2>好きなポイント</h2>
+        <p>
+          🥊 キャラ性能で圧倒し合う所<br />
+          ⚡ スピーディーな対戦<br />
+          🎨 美しいグラフィック<br />
+          🎮 多彩なキャラクター<br />
+          🔥 熱い読み合い<br />
+          👴 期間を空けるとブランクが顕著にでること
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="games.html" class="back-to-games-btn">
+          ← ゲーム一覧に戻る
+        </a>
+      </div>
     </main>
     <footer class="footer">
       <p>&copy; 2024 わたしの自己紹介サイト</p>

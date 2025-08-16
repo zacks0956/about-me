@@ -32,46 +32,73 @@
   </header>
 
   <body class="body">
+    <!-- 背景画像の切り替え -->
+    <div class="lol-background-switcher">
+      <img
+        src="images/slide/7days-slide.jpg"
+        alt="7Days Background 1"
+        class="bg-image bg-image-1 active"
+      />
+      <img
+        src="images/slide/7days-slide2.jpg"
+        alt="7Days Background 2"
+        class="bg-image bg-image-2"
+      />
+    </div>
+
     <div class="cover cover-home">
       <h1>7 DAYS TO DIE</h1>
     </div>
     <main>
-      <section id="7days" class="combined-section">
-        <h2>7 DAYS TO DIE</h2>
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/7days.jpg" alt="7 Days to Die" />
+      <div class="game-introduction">
+        <h2>7 Days to Dieについて</h2>
+        <p>
+          最近正式リリースされたホットなゾンビサバイバルゲーム。<br />
+          7日ごとに襲来するブラッドムーン（血の月）に備えて基地を建設・強化します。<br />
+          昼は資源を集め、夜はゾンビから身を守るサバイバル生活。<br />
+          友達と協力して過酷な世界を生き抜くマルチプレイが特に楽しいです。
+        </p>
+      </div>
+
+      <!-- ゲームスライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/slide/7days-slide.jpg" alt="7Days Slide 1" class="slide-image active">
+          <img src="images/slide/7days-slide2.jpg" alt="7Days Slide 2" class="slide-image">
+          <img src="images/slide/7days-slide3.png" alt="7Days Slide 3" class="slide-image">
+          <img src="images/slide/7days-slide4.jpg" alt="7Days Slide 4" class="slide-image">
+          <img src="images/slide/7days-slide5.jpg" alt="7Days Slide 5" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
             </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>7 Days to Dieについて</h3>
-              <p>
-                最近正式リリースされたホットなゾンビサバイバルゲーム。<br />
-                7日ごとに襲来するブラッドムーン（血の月）に備えて基地を建設・強化します。<br />
-                昼は資源を集め、夜はゾンビから身を守るサバイバル生活。<br />
-                友達と協力して過酷な世界を生き抜くマルチプレイが特に楽しいです。
-              </p>
-            </div>
-            <div class="hobbies-text">
-              <h3>好きなポイント</h3>
-              <ul>
-                <li>🧟 迫力のあるゾンビホード</li>
-                <li>🏗️ 自由度の高い建築システム</li>
-                <li>🌙 緊張感のあるブラッドムーン</li>
-                <li>👥 友達との協力プレイ</li>
-                <li>🔧 豊富なクラフト要素</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
-        <div class="back-to-games-container">
-          <a href="games.html" class="back-to-games-btn">
-            ← ゲーム一覧に戻る
-          </a>
-        </div>
-      </section>
+      </div>
+
+      <div class="game-introduction">
+        <h2>好きなポイント</h2>
+        <p>
+          🧟 迫力のあるゾンビホード<br />
+          🏗️ 自由度の高い建築システム<br />
+          🌙 緊張感のあるブラッドムーン<br />
+          👥 友達との協力プレイ<br />
+          🔧 豊富なクラフト要素
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="games.html" class="back-to-games-btn">
+          ← ゲーム一覧に戻る
+        </a>
+      </div>
     </main>
     <footer class="footer">
       <p>&copy; 2024 わたしの自己紹介サイト</p>

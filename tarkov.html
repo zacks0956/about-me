@@ -32,46 +32,73 @@
   </header>
 
   <body class="body">
+    <!-- 背景画像の切り替え -->
+    <div class="lol-background-switcher">
+      <img
+        src="images/background/tarkov-home.png"
+        alt="Tarkov Background 1"
+        class="bg-image bg-image-1 active"
+      />
+      <img
+        src="images/background/tarkov-home.png"
+        alt="Tarkov Background 2"
+        class="bg-image bg-image-2"
+      />
+    </div>
+
     <div class="cover cover-home">
       <h1>ESCAPE FROM TARKOV</h1>
     </div>
     <main>
-      <section id="tarkov" class="combined-section">
-        <h2>ESCAPE FROM TARKOV</h2>
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/tarkov-home.png" alt="Escape from Tarkov" />
+      <div class="game-introduction">
+        <h2>Escape from Tarkovについて</h2>
+        <p>
+          極限のリアリティを追求したハードコアサバイバルFPS。<br />
+          レイドに参加して貴重なアイテムを収集し、脱出を目指します。<br />
+          死亡すると持っているアイテムを全てロストするスリリングなシステム。<br />
+          アイテム収集の達成感と緊張感がクセになるゲームです。
+        </p>
+      </div>
+
+      <!-- ゲームスライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/slide/tarkov-slide1.png" alt="Tarkov Slide 1" class="slide-image active">
+          <img src="images/slide/tarkov-slide2.png" alt="Tarkov Slide 2" class="slide-image">
+          <img src="images/slide/tarkov-slide3.jpg" alt="Tarkov Slide 3" class="slide-image">
+          <img src="images/slide/tarkov-slide4.jpg" alt="Tarkov Slide 4" class="slide-image">
+          <img src="images/slide/tarkov-slide5.jpg" alt="Tarkov Slide 5" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
+              <div class="indicator"></div>
             </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>Escape from Tarkovについて</h3>
-              <p>
-                極限のリアリティを追求したハードコアサバイバルFPS。<br />
-                レイドに参加して貴重なアイテムを収集し、脱出を目指します。<br />
-                死亡すると持っているアイテムを全てロストするスリリングなシステム。<br />
-                アイテム収集の達成感と緊張感がクセになるゲームです。
-              </p>
-            </div>
-            <div class="hobbies-text">
-              <h3>好きなポイント</h3>
-              <ul>
-                <li>💀 ハードコアなサバイバル</li>
-                <li>💎 貴重なアイテム収集</li>
-                <li>🔫 リアルな武器システム</li>
-                <li>😱 極限の緊張感</li>
-                <li>🎯 戦略的な立ち回り</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
-        <div class="back-to-games-container">
-          <a href="games.html" class="back-to-games-btn">
-            ← ゲーム一覧に戻る
-          </a>
-        </div>
-      </section>
+      </div>
+
+      <div class="game-introduction">
+        <h2>好きなポイント</h2>
+        <p>
+          💀 ハードコアなサバイバル<br />
+          💎 貴重なアイテム収集<br />
+          🔫 リアルな武器システム<br />
+          😱 極限の緊張感<br />
+          🎯 戦略的な立ち回り
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="games.html" class="back-to-games-btn">
+          ← ゲーム一覧に戻る
+        </a>
+      </div>
     </main>
     <footer class="footer">
       <p>&copy; 2024 わたしの自己紹介サイト</p>

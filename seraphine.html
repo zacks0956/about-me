@@ -35,12 +35,12 @@
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
-        src="images/seraphine.jpg"
+        src="images/skin/seraphine.jpg"
         alt="LoL Background 1"
         class="bg-image bg-image-1 active"
       />
       <img
-        src="images/seraphine-skin.jpg"
+        src="images/skin/seraphine.jpg"
         alt="LoL Background 2"
         class="bg-image bg-image-2"
       />
@@ -51,57 +51,59 @@
     </div>
 
     <main>
-      <section class="combined-section">
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/seraphineicon.jpg" alt="セラフィーン" />
-            </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>キャラクター概要</h3>
-              <p>
-                セラフィーンは音楽の力で戦う支援系メイジです。<br />
-                美しい歌声と魔法で味方を鼓舞し、敵を惑わせることができます。<br />
-                サポートとミッドレーンの両方で活躍でき、チームに大きな影響を与えるチャンピオンです。<br />
-                華やかなスキルエフェクトと、音楽をテーマにした独創的なデザインが印象的です。
-              </p>
-            </div>
+      <div class="game-introduction">
+        <h2>キャラクター概要</h2>
+        <p>
+          セラフィーンは音楽の力で戦う支援系メイジです。<br />
+          美しい歌声と魔法で味方を鼓舞し、敵を惑わせることができます。<br />
+          サポートとミッドレーンの両方で活躍でき、チームに大きな影響を与えるチャンピオンです。<br />
+          華やかなスキルエフェクトと、音楽をテーマにした独創的なデザインが印象的です。
+        </p>
+      </div>
 
-            <div class="profile-text">
-              <h3>スキル構成</h3>
-              <p>
-                <strong>Q - ハイノート:</strong>
-                音符を放ち、敵にダメージを与えます。<br />
-                <strong>W - サラウンドサウンド:</strong>
-                味方にシールドとヒールを提供します。<br />
-                <strong>E - ビートドロップ:</strong>
-                敵をスローまたはルートさせます。<br />
-                <strong>R - アンコール:</strong>
-                長距離魅了で敵チーム全体を巻き込みます。
-              </p>
+      <!-- キャラクタースライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/skin/seraphine.jpg" alt="Seraphine Skin" class="slide-image active">
+          <img src="images/skin/seraphine-skin.jpg" alt="Seraphine Skin Alt" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
             </div>
-
-            <div class="hobbies-text">
-              <h3>プレイスタイル</h3>
-              <ul>
-                <li>🎵 音楽テーマのスキル</li>
-                <li>💫 チームサポート</li>
-                <li>✨ 美しいエフェクト</li>
-                <li>🎭 集団戦での存在感</li>
-                <li>🌟 味方を輝かせる</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
+      </div>
 
-        <div class="back-to-characters-container">
-          <a href="league-of-legends.html" class="back-to-characters-btn">
-            ← キャラクター一覧に戻る
-          </a>
-        </div>
-      </section>
+
+      <div class="game-introduction">
+        <h2>スキル構成</h2>
+        <p>
+          <strong>Q - ハイノート:</strong> 音符を放ち、敵にダメージを与えます。<br />
+          <strong>W - サラウンドサウンド:</strong> 味方にシールドまたはヒールを提供します。<br />
+          <strong>E - ビートドロップ:</strong> 敵をスローまたはスネアさせます。<br />
+          <strong>R - アンコール:</strong> 長距離で敵チームを魅了します。
+        </p>
+      </div>
+
+      <div class="game-introduction">
+        <h2>プレイスタイル</h2>
+        <p>
+          セラフィーンは非常に汎用性の高いチャンピオンです。<br />
+          サポートでは味方の保護と敵のキャッチに特化し、<br />
+          ミッドレーンでは高いダメージ量でキャリーすることができます。<br />
+          チームファイトでは後方から味方を支援しつつ、Rで敵陣を崩すのが基本戦術です。
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="league-of-legends.html" class="back-to-games-btn">
+          ← League of Legends に戻る
+        </a>
+      </div>
     </main>
 
     <footer class="footer">

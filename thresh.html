@@ -35,12 +35,12 @@
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
-        src="images/thresh.jpg"
+        src="images/skin/thresh.jpg"
         alt="LoL Background 1"
         class="bg-image bg-image-1 active"
       />
       <img
-        src="images/thresh-skin.jpg"
+        src="images/skin/thresh-skin.jpg"
         alt="LoL Background 2"
         class="bg-image bg-image-2"
       />
@@ -51,57 +51,58 @@
     </div>
 
     <main>
-      <section class="combined-section">
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/thresh-icon.jpg" alt="スレッシュ" />
-            </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>キャラクター概要</h3>
-              <p>
-                スレッシュは悪意に満ちた魂の収穫者で、鎖と鎌を武器とするサポートチャンピオンです。<br />
-                かつては人間でしたが、禁断の力により不死の存在となりました。<br />
-                敵をキャッチし、味方を救出する独特なスキルセットを持ち、チームの要となる存在です。<br />
-                高いスキルキャップを誇り、プレイヤーの腕前が直接的に反映されるチャンピオンです。
-              </p>
-            </div>
+      <div class="game-introduction">
+        <h2>キャラクター概要</h2>
+        <p>
+          スレッシュは悪意に満ちた魂の収穫者で、鎖と鎌を武器とするサポートチャンピオンです。<br />
+          かつては人間でしたが、禁断の力により不死の存在となりました。<br />
+          敵をキャッチし、味方を救出する独特なスキルセットを持ち、チームの要となる存在です。<br />
+          高いスキルキャップを誇り、プレイヤーの腕前が直接的に反映されるチャンピオンです。
+        </p>
+      </div>
 
-            <div class="profile-text">
-              <h3>スキル構成</h3>
-              <p>
-                <strong>Q - デスセンテンス:</strong>
-                鎌を投げて敵をフックし、引き寄せます。<br />
-                <strong>W - ダークパッセージ:</strong>
-                ランタンを投げて味方を救出できます。<br />
-                <strong>E - フレイ:</strong>
-                鎖で敵を引き寄せたり押し返したりします。<br />
-                <strong>R - ザ・ボックス:</strong>
-                敵を囲む箱を作り、逃走を阻みます。
-              </p>
+      <!-- キャラクタースライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/skin/thresh.jpg" alt="Thresh Skin" class="slide-image active">
+          <img src="images/skin/thresh-skin.jpg" alt="Thresh Alt Skin" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
             </div>
-
-            <div class="hobbies-text">
-              <h3>プレイスタイル</h3>
-              <ul>
-                <li>⛓️ フックチャンピオン</li>
-                <li>🏮 味方救出能力</li>
-                <li>👻 アンデッドテーマ</li>
-                <li>🎯 精密なスキルショット</li>
-                <li>⚡ ゲームメイク能力</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
+      </div>
 
-        <div class="back-to-characters-container">
-          <a href="league-of-legends.html" class="back-to-characters-btn">
-            ← キャラクター一覧に戻る
-          </a>
-        </div>
-      </section>
+      <div class="game-introduction">
+        <h2>スキル構成</h2>
+        <p>
+          <strong>Q - デスセンテンス:</strong> 鎌を投げて敵をフックし、引き寄せます。<br />
+          <strong>W - ダークパッセージ:</strong> ランタンを投げて味方を救出できます。<br />
+          <strong>E - フレイ:</strong> 鎖で敵を引き寄せたり押し返したりします。<br />
+          <strong>R - ザ・ボックス:</strong> 敵を囲む箱を作り、逃走を阻みます。
+        </p>
+      </div>
+
+      <div class="game-introduction">
+        <h2>プレイスタイル</h2>
+        <p>
+          フックチャンピオンとして、精密なスキルショットが要求されます。<br />
+          味方救出能力を活かし、アンデッドテーマの不気味さで戦場を支配します。<br />
+          ゲームメイク能力に長け、一つのフックでゲームの流れを変える力を持ち、<br />
+          チーム全体の戦略を決定する重要な役割を担います。
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="league-of-legends.html" class="back-to-games-btn">
+          ← League of Legends に戻る
+        </a>
+      </div>
     </main>
 
     <footer class="footer">

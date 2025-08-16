@@ -35,20 +35,15 @@
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
-        src="images/zed-pre.jpg"
+        src="images/skin/zed-pre.jpg"
         alt="LoL Background 1"
         class="bg-image bg-image-1 active"
       />
       <img
-        src="images/zed-skin.jpg"
+        src="images/skin/zed-skin.jpg"
         alt="LoL Background 2"
         class="bg-image bg-image-2"
       />
-    </div>
-
-    <!-- 背景画像 -->
-    <div class="image-background">
-      <img src="images/zed-background.jpg" alt="Zed Background" />
     </div>
 
     <div class="cover cover-home">
@@ -56,57 +51,58 @@
     </div>
 
     <main>
-      <section class="combined-section">
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/zed-icon.jpg" alt="ゼド" />
-            </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>キャラクター概要</h3>
-              <p>
-                ゼドは影の奥義を操る暗殺者です。<br />
-                かつてはバランスの教えを学んでいましたが、禁断の影の力に魅了され、独自の道を歩むことになりました。<br />
-                影分身を駆使した華麗なコンボと瞬間的な爆発力が特徴的なチャンピオンです。<br />
-                高いスキルキャップを持ち、使いこなすには相当な練習が必要ですが、その分決まった時の爽快感は格別です。
-              </p>
-            </div>
+      <div class="game-introduction">
+        <h2>キャラクター概要</h2>
+        <p>
+          ゼドは影の奥義を操る暗殺者です。<br />
+          かつてはバランスの教えを学んでいましたが、禁断の影の力に魅了され、独自の道を歩むことになりました。<br />
+          影分身を駆使した華麗なコンボと瞬間的な爆発力が特徴的なチャンピオンです。<br />
+          高いスキルキャップを持ち、使いこなすには相当な練習が必要ですが、その分決まった時の爽快感は格別です。
+        </p>
+      </div>
 
-            <div class="profile-text">
-              <h3>スキル構成</h3>
-              <p>
-                <strong>Q - 手裏剣乱舞:</strong>
-                手裏剣を投げて敵にダメージを与えます。<br />
-                <strong>W - 生ける影:</strong>
-                影分身を作り出し、位置を入れ替えることができます。<br />
-                <strong>E - 影斬り:</strong>
-                周囲の敵にダメージを与え、スローを付与します。<br />
-                <strong>R - 死の印:</strong>
-                敵をマークし、数秒後に大ダメージを与えます。
-              </p>
+      <!-- キャラクタースライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/skin/zed.jpg" alt="Zed Skin" class="slide-image active">
+          <img src="images/skin/zed-skin.jpg" alt="Zed Alt Skin" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
             </div>
-
-            <div class="hobbies-text">
-              <h3>プレイスタイル</h3>
-              <ul>
-                <li>⚡ 高機動アサシン</li>
-                <li>🎯 瞬間爆発力</li>
-                <li>👥 1v1が強い</li>
-                <li>🔄 華麗なコンボ</li>
-                <li>⚔️ ハイリスクハイリターン</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
+      </div>
 
-        <div class="back-to-characters-container">
-          <a href="league-of-legends.html" class="back-to-characters-btn">
-            ← キャラクター一覧に戻る
-          </a>
-        </div>
-      </section>
+      <div class="game-introduction">
+        <h2>スキル構成</h2>
+        <p>
+          <strong>Q - 手裏剣乱舞:</strong> 手裏剣を投げて敵にダメージを与えます。<br />
+          <strong>W - 生ける影:</strong> 影分身を作り出し、位置を入れ替えることができます。<br />
+          <strong>E - 影斬り:</strong> 周囲の敵にダメージを与え、スローを付与します。<br />
+          <strong>R - 死の印:</strong> 敵をマークし、数秒後に大ダメージを与えます。
+        </p>
+      </div>
+
+      <div class="game-introduction">
+        <h2>プレイスタイル</h2>
+        <p>
+          高機動アサシンとして、瞬間爆発力で敵を倒すことが得意です。<br />
+          1v1が強く、華麗なコンボで敵を圧倒します。<br />
+          ハイリスクハイリターンな性質を持ち、適切なタイミングでの参戦が重要で、<br />
+          影分身を駆使した立ち回りで戦場を支配します。
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="league-of-legends.html" class="back-to-games-btn">
+          ← League of Legends に戻る
+        </a>
+      </div>
     </main>
 
     <footer class="footer">

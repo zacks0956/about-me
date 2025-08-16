@@ -35,12 +35,12 @@
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
-        src="images/nautilus.jpg"
+        src="images/skin/nautilus.jpg"
         alt="LoL Background 1"
         class="bg-image bg-image-1 active"
       />
       <img
-        src="images/nautilus-skin.jpg"
+        src="images/skin/nautilus-skin.jpg"
         alt="LoL Background 2"
         class="bg-image bg-image-2"
       />
@@ -51,62 +51,63 @@
     </div>
 
     <main>
-      <section class="combined-section">
-        <div class="combined-content">
-          <div class="photo-section">
-            <div class="photo-box profile-box">
-              <img src="images/nautilus-icon.jpg" alt="ノーチラス" />
-            </div>
-          </div>
-          <div class="text-section">
-            <div class="profile-text">
-              <h3>キャラクター概要</h3>
-              <p>
-                ノーチラスは海の深淵から現れた巨大な装甲を纏った存在です。<br />
-                かつて人間だった彼は、深海で謎の力に取り憑かれ、巨大な潜水服のような姿となりました。<br />
-                圧倒的な耐久力と強力なCCスキルを持つタンク型サポートで、チームを守る要となります。<br />
-                アンカーを使った豪快なフックと、敵を次々とノックアップさせる連鎖的なアルティメットが特徴的です。
-              </p>
-            </div>
+      <div class="game-introduction">
+        <h2>キャラクター概要</h2>
+        <p>
+          ノーチラスは深海から現れた巨大な装甲を身に纏った戦士です。<br />
+          圧倒的な体力とタンク性能を誇り、チームの最前線で敵を引き付けます。<br />
+          強力なCCスキルと敵を強制的に引き寄せるフックが特徴的で、<br />
+          チームファイトでのイニシエート能力は全チャンピオン中でもトップクラスです。
+        </p>
+      </div>
 
-            <div class="profile-text">
-              <h3>スキル構成</h3>
-              <p>
-                <strong>Q - ドレッジライン:</strong>
-                アンカーを投げて敵をフックし、引き寄せます。<br />
-                <strong>W - タイタンズラス:</strong>
-                自身にシールドを張り、周囲の敵にダメージを与えます。<br />
-                <strong>E - ライプタイド:</strong>
-                周囲の敵を爆発でスローさせます。<br />
-                <strong>R - デプスチャージ:</strong>
-                対象の敵まで地面を這い、途中の敵全てをノックアップさせます。
-              </p>
+      <!-- キャラクタースライドショー -->
+      <div class="game-slideshow">
+        <div class="slideshow-container">
+          <img src="images/skin/nautilus.jpg" alt="Nautilus Skin" class="slide-image active">
+          <img src="images/skin/nautilus-skin.jpg" alt="Nautilus Alt Skin" class="slide-image">
+          
+          <div class="slideshow-controls">
+            <button class="prev-btn">‹</button>
+            <div class="slideshow-indicators">
+              <div class="indicator active"></div>
+              <div class="indicator"></div>
             </div>
-
-            <div class="hobbies-text">
-              <h3>プレイスタイル</h3>
-              <ul>
-                <li>⚓ 強力なフック能力</li>
-                <li>🛡️ 高い耐久力</li>
-                <li>🌊 海のテーマ</li>
-                <li>💥 連鎖CC効果</li>
-                <li>🗿 不動の守護者</li>
-              </ul>
-            </div>
+            <button class="next-btn">›</button>
           </div>
         </div>
+      </div>
 
-        <div class="back-to-characters-container">
-          <a href="league-of-legends.html" class="back-to-characters-btn">
-            ← キャラクター一覧に戻る
-          </a>
-        </div>
-      </section>
+      <div class="game-introduction">
+        <h2>スキル構成</h2>
+        <p>
+          <strong>Q - ドレッドライン:</strong> 錨を投げて敵を引き寄せ、自分も移動します。<br />
+          <strong>W - タイタンの怒り:</strong> ダメージを吸収するシールドと追加ダメージを得ます。<br />
+          <strong>E - リップタイド:</strong> 周囲の敵に爆発ダメージとスローを与えます。<br />
+          <strong>R - 深海の激流:</strong> 指定した敵を追跡し、ノックアップさせる必殺技です。
+        </p>
+      </div>
+
+      <div class="game-introduction">
+        <h2>プレイスタイル</h2>
+        <p>
+          ノーチラスは究極のタンク・サポートチャンピオンです。<br />
+          Qフックで敵をキャッチしてイニシエートを取り、<br />
+          Rで確実にキーターゲットを無力化することができます。<br />
+          チームの盾となって味方を守りつつ、敵の脅威を排除する役割を担います。
+        </p>
+      </div>
+
+      <div class="back-to-games-container">
+        <a href="league-of-legends.html" class="back-to-games-btn">
+          ← League of Legends に戻る
+        </a>
+      </div>
     </main>
-
     <footer class="footer">
       <p>&copy; 2024 わたしの自己紹介サイト</p>
     </footer>
     <script src="js/scripts.js"></script>
   </body>
 </html>
+
