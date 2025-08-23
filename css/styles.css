@@ -77,6 +77,24 @@
   }
 }
 
+/* 背景動画 */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.3) contrast(1.2);
+}
+
 /* 基本スタイル */
 .body {
   font-family: "Philosopher", sans-serif;

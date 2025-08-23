@@ -199,4 +199,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 2000);
     });
   }
+
+  // 背景動画の初期化
+  const backgroundVideo = document.getElementById("video2");
+  if (backgroundVideo) {
+    // 動画の読み込みが完了したら再生を開始
+    backgroundVideo.addEventListener("loadeddata", function () {
+      backgroundVideo.play().catch((error) => {
+        console.log("動画の自動再生が失敗しました:", error);
+      });
+    });
+
+    // 動画が既に読み込まれている場合は即座に再生
+    if (backgroundVideo.readyState >= 2) {
+      backgroundVideo.play().catch((error) => {
+        console.log("動画の自動再生が失敗しました:", error);
+      });
+    }
+  }
 });
