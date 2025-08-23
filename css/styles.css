@@ -14,7 +14,7 @@
   --shadow-heavy: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* League of Legends 背景切り替えスタイル */
+/* 背景画像切り替えアニメーション */
 .lol-background-switcher {
   position: fixed;
   top: 0;
@@ -41,7 +41,6 @@
   opacity: 1;
 }
 
-/* 5秒間隔でアニメーション */
 .bg-image-1 {
   animation: switchBackground1 10s infinite;
 }
@@ -78,6 +77,7 @@
   }
 }
 
+/* 基本スタイル */
 .body {
   font-family: "Philosopher", sans-serif;
   line-height: 1.6;
@@ -87,11 +87,14 @@
   background-attachment: fixed;
   color: var(--primary-color);
 }
+
 a {
   color: var(--accent-color);
   text-decoration: none;
   transition: var(--transition-smooth);
 }
+
+/* ヘッダーとナビゲーション */
 
 .header {
   background: var(--secondary-bg);
@@ -385,33 +388,6 @@ section h2 {
   transform: scale(1.02);
 }
 
-/* テキストコンテンツのスタイル */
-.text-content {
-  flex: 1;
-  padding-left: 1rem;
-}
-
-.text-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #cdbe91;
-}
-
-.text-content ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.text-content ul li {
-  background: rgba(30, 35, 40, 0.8);
-  margin: 0.5rem 0;
-  padding: 0.8rem 1rem;
-  border-left: 4px solid #c8aa6e;
-  border-radius: 4px;
-  font-size: 1.1rem;
-  color: #cdbe91;
-}
-
 /* ゲームグリッドのスタイル */
 .games-grid {
   display: grid;
@@ -495,50 +471,6 @@ section h2 {
 
 .game-card-link:hover .game-info p {
   color: #f0e6d2;
-}
-
-/* 動画背景のスタイル */
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.video-background video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.3;
-  transition: var(--transition-opacity);
-}
-
-/* 画像背景のスタイル */
-.image-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.image-background img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.3;
-  transition: var(--transition-opacity);
 }
 
 /* League of Legends マルチメニュースタイル */
@@ -664,34 +596,6 @@ main h2 {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* キャラクター紹介文のスタイル */
-.character-introduction {
-  background: rgba(16, 26, 40, 0.9);
-  backdrop-filter: blur(15px);
-  border: 1px solid #463714;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: 2rem 0 3rem 0;
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-}
-
-.character-introduction:hover {
-  border-color: #c8aa6e;
-  box-shadow: 0 8px 25px rgba(200, 170, 110, 0.2);
-  transform: translateY(-2px);
-}
-
-.character-introduction p {
-  color: #cdbe91;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 0;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 /* ゲーム紹介文のスタイル */
 .game-introduction {
   background: rgba(16, 26, 40, 0.95);
@@ -754,31 +658,6 @@ main h2 {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* キャラクター詳細ページの戻るボタン */
-.back-to-characters-btn {
-  display: inline-block;
-  background: rgba(200, 170, 110, 0.2);
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  border: 1px solid #c8aa6e;
-  color: #f0e6d2;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.back-to-characters-btn:hover {
-  background: rgba(200, 170, 110, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(200, 170, 110, 0.3);
-}
-
-.back-to-characters-container {
-  text-align: center;
-  margin-top: 2rem;
-}
-
 /* ゲーム一覧の戻るボタン */
 .back-to-games-btn {
   display: inline-block;
@@ -804,6 +683,253 @@ main h2 {
   margin-top: 2rem;
 }
 
+/* お問い合わせフォームのスタイル */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: var(--secondary-bg);
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: var(--shadow-heavy);
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-intro h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.contact-intro p {
+  color: var(--highlight-color);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #ff6b6b;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  background: rgba(16, 26, 40, 0.7);
+  color: var(--highlight-color);
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--highlight-color);
+  box-shadow: 0 0 10px rgba(240, 230, 210, 0.3);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(240, 230, 210, 0.6);
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.submit-btn {
+  background: var(--accent-gradient);
+  color: #1e2328;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 170, 110, 0.4);
+}
+
+.reset-btn {
+  background: transparent;
+  color: var(--highlight-color);
+  border: 2px solid var(--accent-color);
+}
+
+.reset-btn:hover {
+  background: var(--accent-color);
+  color: #1e2328;
+}
+
+.back-to-home-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-to-home-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: transparent;
+  color: var(--accent-color);
+  text-decoration: none;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  font-weight: bold;
+  transition: var(--transition-smooth);
+}
+
+.back-to-home-btn:hover {
+  background: var(--accent-color);
+  color: #1e2328;
+  transform: translateY(-2px);
+}
+
+/* フッターのお問い合わせリンク */
+.contact-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.contact-link:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+/* ゲームスライドショーのスタイル */
+.game-slideshow {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--secondary-bg);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: var(--shadow-heavy);
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: rgba(16, 26, 40, 0.7);
+}
+
+.slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  border-radius: 10px;
+}
+
+.slide-image.active {
+  opacity: 1;
+}
+
+.slideshow-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(16, 26, 40, 0.8);
+  padding: 12px 20px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.prev-btn,
+.next-btn {
+  background: var(--accent-color);
+  color: #1e2328;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: var(--highlight-color);
+  transform: scale(1.1);
+}
+
+.slideshow-indicators {
+  display: flex;
+  gap: 8px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(240, 230, 210, 0.4);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.indicator.active {
+  background: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: var(--highlight-color);
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 1024px) {
   .multi-menu-grid {
@@ -813,6 +939,22 @@ main h2 {
 }
 
 @media (max-width: 768px) {
+  .combined-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .photo-section {
+    flex: none;
+    align-items: center;
+  }
+
+  .photo-box {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+  }
+
   .multi-menu-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -831,16 +973,6 @@ main h2 {
     font-size: 0.8rem;
   }
 
-  .character-introduction {
-    padding: 1.5rem;
-    margin: 1.5rem 0 2rem 0;
-  }
-
-  .character-introduction p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
   .game-introduction {
     padding: 2rem;
     margin: 1.5rem 0 2.5rem 0;
@@ -854,6 +986,48 @@ main h2 {
     font-size: 1rem;
     line-height: 1.7;
   }
+
+  .contact-container {
+    padding: 30px 15px;
+    margin-top: 10px;
+  }
+
+  .contact-intro h2 {
+    font-size: 1.7rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .submit-btn,
+  .reset-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .slideshow-container {
+    height: 250px;
+  }
+
+  .slideshow-controls {
+    bottom: 10px;
+    padding: 8px 15px;
+    gap: 15px;
+  }
+
+  .prev-btn,
+  .next-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -861,160 +1035,12 @@ main h2 {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
-}
 
-/* ゲーム用スライドショースタイル */
-.game-slideshow {
-  position: relative;
-  max-width: 1200px;
-  margin: 2rem auto;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: var(--shadow-heavy);
-}
-
-.slideshow-container {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-}
-
-.slide-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.slide-image.active {
-  opacity: 1;
-}
-
-.slideshow-controls {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px 20px;
-  border-radius: 25px;
-}
-
-.prev-btn, .next-btn {
-  background: var(--accent-color);
-  color: var(--dark-overlay);
-  border: none;
-  padding: 8px 12px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: var(--transition-smooth);
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.prev-btn:hover, .next-btn:hover {
-  background: var(--highlight-color);
-  transform: scale(1.1);
-}
-
-.slideshow-indicators {
-  display: flex;
-  gap: 8px;
-  margin: 0 15px;
-}
-
-.indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.indicator.active {
-  background: var(--accent-color);
-}
-
-.indicator:hover {
-  background: var(--highlight-color);
-}
-
-/* ゲーム紹介セクション */
-.game-introduction {
-  background: var(--secondary-bg);
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 1000px;
-  border-radius: 10px;
-  border: var(--border-accent);
-  box-shadow: var(--shadow-light);
-}
-
-.game-introduction h2 {
-  color: var(--accent-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.game-introduction p {
-  color: var(--primary-color);
-  line-height: 1.8;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 768px) {
-  .game-slideshow {
-    margin: 1rem;
-    max-width: calc(100% - 2rem);
+  .games-grid {
+    grid-template-columns: 1fr;
   }
-  
+
   .slideshow-container {
-    height: 400px;
-  }
-  
-  .game-introduction {
-    margin: 1rem;
-    padding: 1.5rem;
-  }
-  
-  .game-introduction h2 {
-    font-size: 1.6rem;
-  }
-  
-  .game-introduction p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .slideshow-container {
-    height: 300px;
-  }
-  
-  .slideshow-controls {
-    bottom: 10px;
-    padding: 8px 15px;
-  }
-  
-  .prev-btn, .next-btn {
-    padding: 6px 10px;
-    font-size: 0.9rem;
-  }
-  
-  .indicator {
-    width: 10px;
-    height: 10px;
+    height: 200px;
   }
 }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせ - わたしの自己紹介サイト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header class="header">
+    <h1>わたしの自己紹介サイト</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">🏠 HOME</a></li>
+        <li><a href="games.html">🎮 GAMES</a></li>
+        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body class="body">
+    <div class="cover cover-home">
+      <h1>📧 お問い合わせ</h1>
+    </div>
+
+    <main>
+      <div class="contact-container">
+        <div class="contact-intro">
+          <h2>お気軽にお問い合わせください</h2>
+          <p>
+            ご質問やご意見、お仕事のご依頼などございましたら、<br />
+            下記のフォームよりお気軽にお問い合わせください。<br />
+            できる限り迅速にご返信いたします。
+          </p>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">お名前 <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email"
+              >メールアドレス <span class="required">*</span></label
+            >
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">件名 <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="">選択してください</option>
+              <option value="general">一般的なお問い合わせ</option>
+              <option value="work">お仕事のご依頼</option>
+              <option value="collaboration">コラボレーションについて</option>
+              <option value="technical">技術的な質問</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message"
+              >メッセージ <span class="required">*</span></label
+            >
+            <textarea id="message" name="message" rows="8" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">📧 送信する</button>
+            <button type="reset" class="reset-btn">🔄 リセット</button>
+          </div>
+        </form>
+
+        <div class="back-to-home-container">
+          <a href="index.html" class="back-to-home-btn"> ← ホームに戻る </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 わたしの自己紹介サイト</p>
+      <p><a href="contact.html" class="contact-link">📧 お問い合わせ</a></p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
