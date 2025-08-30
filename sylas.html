@@ -3,24 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>サイラス - League of Legends</title>
+    <title>サイラス - League of Legends | わたしの自己紹介サイト</title>
+    <meta name="description" content="League of Legendsのサイラスについて詳しく紹介。スキル構成、プレイスタイル、戦略などを解説。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Philosopher&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
-  <header class="header">
+  <body class="body">
+    <header class="header">
     <h1>MY HOMEPAGE</h1>
     <nav class="nav">
       <ul>
@@ -36,13 +32,15 @@
     <div class="lol-background-switcher">
       <img
         src="images/skin/sylas.jpg"
-        alt="LoL Background 1"
+        alt="サイラス デフォルトスキン - 牢獄の囚人"
         class="bg-image bg-image-1 active"
+        loading="lazy"
       />
       <img
         src="images/skin/sylas-skin.jpg"
-        alt="LoL Background 2"
+        alt="サイラス 特別スキン - 革命家"
         class="bg-image bg-image-2"
+        loading="lazy"
       />
     </div>
 
@@ -66,22 +64,24 @@
         <div class="slideshow-container">
           <img
             src="images/skin/sylas.jpg"
-            alt="Sylas Skin"
+            alt="サイラス デフォルトスキン - 牢獄の囚人"
             class="slide-image active"
+            loading="lazy"
           />
           <img
             src="images/skin/sylas-skin.jpg"
-            alt="Sylas Alt Skin"
+            alt="サイラス 特別スキン - 革命家"
             class="slide-image"
+            loading="lazy"
           />
 
           <div class="slideshow-controls">
-            <button class="prev-btn">‹</button>
+            <button class="prev-btn" aria-label="前の画像">‹</button>
             <div class="slideshow-indicators">
-              <div class="indicator active"></div>
-              <div class="indicator"></div>
+              <div class="indicator active" aria-label="1枚目の画像"></div>
+              <div class="indicator" aria-label="2枚目の画像"></div>
             </div>
-            <button class="next-btn">›</button>
+            <button class="next-btn" aria-label="次の画像">›</button>
           </div>
         </div>
       </div>

@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>自己紹介</title>
+    <title>ゲーム紹介 - わたしの自己紹介サイト</title>
+    <meta
+      name="description"
+      content="私のお気に入りゲームの紹介ページ。Street Fighter 6、Valorant、League of Legends、Escape from Tarkovなどのゲームについて詳しく紹介しています。"
+    />
     <!-- reset.css ress -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +43,20 @@
   </header>
 
   <body class="body">
+    <!-- 背景画像切り替え -->
+    <div class="lol-background-switcher">
+      <img
+        src="images/title/7days-title.jpg"
+        alt="7Days to Die ゲームタイトル画像"
+        class="bg-image bg-image-1 active"
+      />
+      <img
+        src="images/title/horizon-title.png"
+        alt="Horizon Zero Dawn ゲームタイトル画像"
+        class="bg-image bg-image-2"
+      />
+    </div>
+
     <div class="cover cover-home">
       <h1>GAMES</h1>
     </div>
@@ -49,7 +67,10 @@
           <a href="street-fighter-6.html" class="game-card-link">
             <div class="game-card">
               <div class="game-image">
-                <img src="images/background/SF6-background.jpg" alt="Street Fighter 6" />
+                <img
+                  src="images/background/SF6-background.jpg"
+                  alt="Street Fighter 6 ゲーム画面"
+                />
               </div>
               <div class="game-info">
                 <h3>Street Fighter 6</h3>
@@ -63,7 +84,10 @@
           <a href="valorant.html" class="game-card-link">
             <div class="game-card">
               <div class="game-image">
-                <img src="images/background/valorant-home.jpg" alt="Valorant" />
+                <img
+                  src="images/background/valorant-home.jpg"
+                  alt="Valorant ゲーム画面"
+                />
               </div>
               <div class="game-info">
                 <h3>Valorant</h3>
@@ -77,13 +101,14 @@
           <a href="tarkov.html" class="game-card-link">
             <div class="game-card">
               <div class="game-image">
-                <img src="images/background/tarkov-home.png" alt="Escape from Tarkov" />
+                <img
+                  src="images/background/tarkov-home.png"
+                  alt="Escape from Tarkov ゲーム画面"
+                />
               </div>
               <div class="game-info">
                 <h3>Escape from Tarkov</h3>
-                <p>
-                  リアルなサバイバルFPS。ごみ収集の先にある快感が病みつき。
-                </p>
+                <p>リアルなサバイバルFPS。ごみ収集の先にある快感が病みつき。</p>
               </div>
             </div>
           </a>
@@ -91,23 +116,33 @@
           <a href="league-of-legends.html" class="game-card-link">
             <div class="game-card">
               <div class="game-image">
-                <img src="images/background/lol-home.jpg" alt="League of Legends" />
+                <img
+                  src="images/background/lol-home.jpg"
+                  alt="League of Legends ゲーム画面"
+                />
               </div>
               <div class="game-info">
                 <h3>League of Legends</h3>
-                <p>世界最大級のMOBA。チャンピオンの多様性と戦略の深さが魅力。</p>
+                <p>
+                  世界最大級のMOBA。チャンピオンの多様性と戦略の深さが魅力。
+                </p>
               </div>
             </div>
           </a>
- 
+
           <a href="horizon-zero-dawn.html" class="game-card-link">
             <div class="game-card">
               <div class="game-image">
-                <img src="images/title/horizon-title.png" alt="horizon" />
+                <img
+                  src="images/title/horizon-title.png"
+                  alt="Horizon Zero Dawn ゲームタイトル"
+                />
               </div>
               <div class="game-info">
                 <h3>Horizon:Zero Dawn</h3>
-                <p>機械獣が支配する世界を舞台にしたオープンワールドアクションRPG。</p>
+                <p>
+                  機械獣が支配する世界を舞台にしたオープンワールドアクションRPG。
+                </p>
               </div>
             </div>
           </a>
@@ -115,7 +150,10 @@
           <a href="7days-to-die.html" class="game-card-link">
             <div class="game-card">
               <div class="game-image">
-                <img src="images/title/7days-title.jpg" alt="7days-to-die" />
+                <img
+                  src="images/title/7days-title.jpg"
+                  alt="7Days to Die ゲームタイトル"
+                />
               </div>
               <div class="game-info">
                 <h3>7days to die</h3>
@@ -124,9 +162,6 @@
             </div>
           </a>
         </div>
-
-    </div>
-
       </section>
     </main>
     <footer class="footer">
