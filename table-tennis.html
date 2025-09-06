@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>卓球 - 自己紹介</title>
+    <title>卓球 - 趣味紹介 | わたしの自己紹介サイト</title>
+    <meta
+      name="description"
+      content="卓球の魅力と楽しさについて紹介。中学・高校での経験と現在の活動について詳しく解説。"
+    />
+    <meta property="og:title" content="卓球 - 趣味紹介" />
+    <meta
+      property="og:description"
+      content="卓球の魅力と楽しさについて紹介。中学・高校での経験と現在の活動について詳しく解説。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/counter.mov" />
     <!-- reset.css ress -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,23 +26,33 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <header class="header">
-    <h1>MY HOMEPAGE</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html" class="active">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body class="body">
+    <header class="header">
+      <h1>MY HOMEPAGE</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a>
+          </li>
+          <li>
+            <a
+              href="table-tennis.html"
+              class="active"
+              aria-label="現在のページ：卓球"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- 背景動画 -->
     <div class="video-background">
       <video id="video2" autoplay muted loop playsinline>
         <source src="images/counter.mov" type="video/mp4" />
-        お使いのブラウザは動画をサポートしていません。
+        卓球の動画 - お使いのブラウザは動画をサポートしていません。
       </video>
     </div>
 
@@ -44,7 +65,11 @@
         <div class="combined-content">
           <div class="photo-section">
             <div class="photo-box profile-box">
-              <img src="images/table-tennis-prof.HEIC" alt="卓球の写真" />
+              <img
+                src="images/table-tennis-prof.HEIC"
+                alt="卓球をしている私の写真"
+                loading="lazy"
+              />
             </div>
           </div>
           <div class="text-section">

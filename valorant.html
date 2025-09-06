@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Valorant - 自己紹介</title>
+    <title>Valorant - タクティカルFPS紹介 | わたしの自己紹介サイト</title>
+    <meta
+      name="description"
+      content="Valorantの詳細紹介ページ。使用エージェント6体の紹介とタクティカルFPSの魅力について解説。"
+    />
+    <meta property="og:title" content="Valorant - タクティカルFPS紹介" />
+    <meta
+      property="og:description"
+      content="Valorantの詳細紹介ページ。使用エージェント6体の紹介とタクティカルFPSの魅力について解説。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/background/valorant-home.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,29 +25,38 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <header class="header">
-    <h1>MY HOMEPAGE</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body class="body">
+    <header class="header">
+      <h1>MY HOMEPAGE</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a>
+          </li>
+          <li>
+            <a href="table-tennis.html" aria-label="卓球ページへ移動"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
         src="images/background/valorant-home.jpg"
-        alt="Valorant Background 1"
+        alt="Valorant ゲーム背景画像"
         class="bg-image bg-image-1 active"
+        loading="lazy"
       />
       <img
         src="images/background/valorant-home.jpg"
-        alt="Valorant Background 2"
+        alt="Valorant メニュー画面"
         class="bg-image bg-image-2"
+        loading="lazy"
       />
     </div>
 
@@ -73,7 +93,11 @@
         <div class="menu-item-link">
           <div class="menu-item">
             <div class="menu-icon">
-              <img src="images/icon/jett-icon.png" alt="ジェット" />
+              <img
+                src="images/icon/jett-icon.png"
+                alt="ジェット - 風のデュエリスト"
+                loading="lazy"
+              />
             </div>
             <h3>ジェット</h3>
             <p>風のデュエリスト</p>
@@ -83,7 +107,11 @@
         <div class="menu-item-link">
           <div class="menu-item">
             <div class="menu-icon">
-              <img src="images/icon/breech-icon.jpg" alt="ブリーチ" />
+              <img
+                src="images/icon/breech-icon.jpg"
+                alt="ブリーチ - 衝撃のコントローラー"
+                loading="lazy"
+              />
             </div>
             <h3>ブリーチ</h3>
             <p>衝撃のコントローラー</p>
@@ -93,7 +121,11 @@
         <div class="menu-item-link">
           <div class="menu-item">
             <div class="menu-icon">
-              <img src="images/icon/gekkko-icon.jpeg" alt="ゲッコ" />
+              <img
+                src="images/icon/gekkko-icon.jpeg"
+                alt="ゲッコー - 生物の使役者"
+                loading="lazy"
+              />
             </div>
             <h3>ゲッコー</h3>
             <p>生物の使役者</p>
@@ -103,7 +135,11 @@
         <div class="menu-item-link">
           <div class="menu-item">
             <div class="menu-icon">
-              <img src="images/icon/fade-icon.jpg" alt="フェイド" />
+              <img
+                src="images/icon/fade-icon.jpg"
+                alt="フェイド - 影の使役者"
+                loading="lazy"
+              />
             </div>
             <h3>フェイド</h3>
             <p>影の使役者</p>
@@ -112,7 +148,13 @@
       </div>
 
       <div class="back-to-games-container">
-        <a href="games.html" class="back-to-games-btn"> ← ゲーム一覧に戻る </a>
+        <a
+          href="games.html"
+          class="back-to-games-btn"
+          aria-label="ゲーム一覧ページに戻る"
+        >
+          ← ゲーム一覧に戻る
+        </a>
       </div>
     </main>
     <footer class="footer">

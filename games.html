@@ -12,48 +12,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Philosopher&family=Bitcount+Grid+Double:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
-  <header class="header">
-    <h1>MY HOMEPAGE</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html" class="active">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body class="body">
+    <header class="header">
+      <h1>MY HOMEPAGE</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a
+              href="games.html"
+              class="active"
+              aria-label="ゲームページ（現在のページ）"
+              >🎮 GAMES</a
+            >
+          </li>
+          <li>
+            <a href="table-tennis.html" aria-label="卓球ページへ移動"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- 背景画像切り替え -->
     <div class="lol-background-switcher">
       <img
         src="images/title/7days-title.jpg"
         alt="7Days to Die ゲームタイトル画像"
         class="bg-image bg-image-1 active"
+        loading="lazy"
       />
       <img
         src="images/title/horizon-title.png"
         alt="Horizon Zero Dawn ゲームタイトル画像"
         class="bg-image bg-image-2"
+        loading="lazy"
       />
     </div>
 
@@ -70,6 +73,7 @@
                 <img
                   src="images/background/SF6-background.jpg"
                   alt="Street Fighter 6 ゲーム画面"
+                  loading="lazy"
                 />
               </div>
               <div class="game-info">
@@ -87,6 +91,7 @@
                 <img
                   src="images/background/valorant-home.jpg"
                   alt="Valorant ゲーム画面"
+                  loading="lazy"
                 />
               </div>
               <div class="game-info">
@@ -104,6 +109,7 @@
                 <img
                   src="images/background/tarkov-home.png"
                   alt="Escape from Tarkov ゲーム画面"
+                  loading="lazy"
                 />
               </div>
               <div class="game-info">
@@ -119,6 +125,7 @@
                 <img
                   src="images/background/lol-home.jpg"
                   alt="League of Legends ゲーム画面"
+                  loading="lazy"
                 />
               </div>
               <div class="game-info">
@@ -136,6 +143,7 @@
                 <img
                   src="images/title/horizon-title.png"
                   alt="Horizon Zero Dawn ゲームタイトル"
+                  loading="lazy"
                 />
               </div>
               <div class="game-info">
@@ -153,6 +161,7 @@
                 <img
                   src="images/title/7days-title.jpg"
                   alt="7Days to Die ゲームタイトル"
+                  loading="lazy"
                 />
               </div>
               <div class="game-info">

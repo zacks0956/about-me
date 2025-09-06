@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Escape from Tarkov - 自己紹介</title>
+    <title>Escape from Tarkov - FPS ゲーム紹介 | わたしの自己紹介サイト</title>
+    <meta
+      name="description"
+      content="Escape from Tarkovの詳細紹介ページ。ハードコアサバイバルFPSの魅力と緊張感について解説。"
+    />
+    <meta
+      property="og:title"
+      content="Escape from Tarkov - ハードコアサバイバルFPS"
+    />
+    <meta
+      property="og:description"
+      content="Escape from Tarkovの詳細紹介ページ。ハードコアサバイバルFPSの魅力と緊張感について解説。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/background/tarkov-home.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,18 +28,25 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <header class="header">
-    <h1>MY HOMEPAGE</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body class="body">
+    <header class="header">
+      <h1>MY HOMEPAGE</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a>
+          </li>
+          <li>
+            <a href="table-tennis.html" aria-label="卓球ページへ移動"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
@@ -59,40 +80,45 @@
         <div class="slideshow-container">
           <img
             src="images/slide/tarkov-slide1.png"
-            alt="Tarkov Slide 1"
+            alt="Escape from Tarkov ゲームプレイ画面1"
             class="slide-image active"
+            loading="lazy"
           />
           <img
             src="images/slide/tarkov-slide2.png"
-            alt="Tarkov Slide 2"
+            alt="Escape from Tarkov ゲームプレイ画面2"
             class="slide-image"
+            loading="lazy"
           />
           <img
             src="images/slide/tarkov-slide3.jpg"
-            alt="Tarkov Slide 3"
+            alt="Escape from Tarkov ゲームプレイ画面3"
             class="slide-image"
+            loading="lazy"
           />
           <img
             src="images/slide/tarkov-slide4.jpg"
-            alt="Tarkov Slide 4"
+            alt="Escape from Tarkov ゲームプレイ画面4"
             class="slide-image"
+            loading="lazy"
           />
           <img
             src="images/slide/tarkov-slide5.jpg"
-            alt="Tarkov Slide 5"
+            alt="Escape from Tarkov ゲームプレイ画面5"
             class="slide-image"
+            loading="lazy"
           />
 
           <div class="slideshow-controls">
-            <button class="prev-btn">‹</button>
+            <button class="prev-btn" aria-label="前の画像">‹</button>
             <div class="slideshow-indicators">
-              <div class="indicator active"></div>
-              <div class="indicator"></div>
-              <div class="indicator"></div>
-              <div class="indicator"></div>
-              <div class="indicator"></div>
+              <div class="indicator active" aria-label="1枚目の画像"></div>
+              <div class="indicator" aria-label="2枚目の画像"></div>
+              <div class="indicator" aria-label="3枚目の画像"></div>
+              <div class="indicator" aria-label="4枚目の画像"></div>
+              <div class="indicator" aria-label="5枚目の画像"></div>
             </div>
-            <button class="next-btn">›</button>
+            <button class="next-btn" aria-label="次の画像">›</button>
           </div>
         </div>
       </div>
@@ -109,7 +135,13 @@
       </div>
 
       <div class="back-to-games-container">
-        <a href="games.html" class="back-to-games-btn"> ← ゲーム一覧に戻る </a>
+        <a
+          href="games.html"
+          class="back-to-games-btn"
+          aria-label="ゲーム一覧ページに戻る"
+        >
+          ← ゲーム一覧に戻る
+        </a>
       </div>
     </main>
     <footer class="footer">

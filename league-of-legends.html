@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>League of Legends - 自己紹介</title>
+    <title>League of Legends - MOBA ゲーム紹介 | わたしの自己紹介サイト</title>
+    <meta
+      name="description"
+      content="League of Legendsの詳細紹介ページ。使用チャンピオン8体の紹介とMOBAゲームの魅力について解説。"
+    />
+    <meta property="og:title" content="League of Legends - MOBA ゲーム紹介" />
+    <meta
+      property="og:description"
+      content="League of Legendsの詳細紹介ページ。使用チャンピオン8体の紹介とMOBAゲームの魅力について解説。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/background/lol-home.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,29 +25,39 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <header class="header">
-    <h1>MY HOMEPAGE</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body class="body">
+    <header class="header">
+      <h1>MY HOMEPAGE</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a>
+          </li>
+          <li>
+            <a href="table-tennis.html" aria-label="卓球ページへ移動"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
         src="images/background/lol-home.jpg"
-        alt="LoL Background 1"
+        alt="League of Legends ホーム背景画像"
         class="bg-image bg-image-1 active"
+        loading="lazy"
       />
       <img
         src="images/background/lol-background.jpg"
-        alt="LoL Background 2"
+        alt="League of Legends ゲーム背景画像"
         class="bg-image bg-image-2"
+        loading="lazy"
       />
     </div>
 
@@ -71,7 +92,11 @@
       </div>
 
       <div class="multi-menu-grid">
-        <a href="seraphine.html" class="menu-item-link">
+        <a
+          href="seraphine.html"
+          class="menu-item-link"
+          aria-label="セラフィーン（音楽の魔女）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/seraphineicon.jpg" alt="セラフィーン" />
@@ -81,7 +106,11 @@
           </div>
         </a>
 
-        <a href="xerath.html" class="menu-item-link">
+        <a
+          href="xerath.html"
+          class="menu-item-link"
+          aria-label="ゼラス（虚無の使者）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/zellas-icon.png" alt="ゼラス" />
@@ -91,7 +120,11 @@
           </div>
         </a>
 
-        <a href="ahri.html" class="menu-item-link">
+        <a
+          href="ahri.html"
+          class="menu-item-link"
+          aria-label="アーリ（九尾の狐）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/ahri_icon.jpg" alt="アーリ" />
@@ -101,17 +134,25 @@
           </div>
         </a>
 
-        <a href="sylas.html" class="menu-item-link">
+        <a
+          href="sylas.html"
+          class="menu-item-link"
+          aria-label="サイラス（牢獄の囚人）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
-              <img src="images/icon/sylas-icon.jpg" alt="sylas" />
+              <img src="images/icon/sylas-icon.jpg" alt="サイラス" />
             </div>
             <h3>サイラス</h3>
             <p>牢獄の囚人</p>
           </div>
         </a>
 
-        <a href="thresh.html" class="menu-item-link">
+        <a
+          href="thresh.html"
+          class="menu-item-link"
+          aria-label="スレッシュ（魂の収穫者）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/thresh-icon.jpg" alt="スレッシュ" />
@@ -121,7 +162,11 @@
           </div>
         </a>
 
-        <a href="nautilus.html" class="menu-item-link">
+        <a
+          href="nautilus.html"
+          class="menu-item-link"
+          aria-label="ノーチラス（海の巨人）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/nautilus-icon.jpg" alt="ノーチラス" />
@@ -131,7 +176,11 @@
           </div>
         </a>
 
-        <a href="leblanc.html" class="menu-item-link">
+        <a
+          href="leblanc.html"
+          class="menu-item-link"
+          aria-label="ルブラン（欺きの魔術師）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/leblanc-icon.jpg" alt="ルブラン" />
@@ -141,7 +190,11 @@
           </div>
         </a>
 
-        <a href="zed.html" class="menu-item-link">
+        <a
+          href="zed.html"
+          class="menu-item-link"
+          aria-label="ゼド（影の達人）の詳細ページへ移動"
+        >
           <div class="menu-item">
             <div class="menu-icon">
               <img src="images/icon/zed-icon.jpg" alt="ゼド" />
@@ -153,7 +206,13 @@
       </div>
 
       <div class="back-to-games-container">
-        <a href="games.html" class="back-to-games-btn"> ← ゲーム一覧に戻る </a>
+        <a
+          href="games.html"
+          class="back-to-games-btn"
+          aria-label="ゲーム一覧ページに戻る"
+        >
+          ← ゲーム一覧に戻る
+        </a>
       </div>
     </main>
     <footer class="footer">

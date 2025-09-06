@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>お問い合わせ - わたしの自己紹介サイト</title>
-    <meta name="description" content="お問い合わせページ。ご質問やご意見、お仕事のご依頼など、お気軽にお問い合わせください。" />
+    <meta
+      name="description"
+      content="お問い合わせページ。ご質問やご意見、お仕事のご依頼など、お気軽にお問い合わせください。"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,17 +20,24 @@
 
   <body class="body">
     <header class="header">
-    <h1>わたしの自己紹介サイト</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
+      <h1>わたしの自己紹介サイト</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a>
+          </li>
+          <li>
+            <a href="table-tennis.html" aria-label="卓球ページへ移動"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <body class="body">
     <div class="cover cover-home">
       <h1>📧 お問い合わせ</h1>
     </div>
@@ -46,11 +56,11 @@
         <form class="contact-form" action="#" method="POST" novalidate>
           <div class="form-group">
             <label for="name">お名前 <span class="required">*</span></label>
-            <input 
-              type="text" 
-              id="name" 
-              name="name" 
-              required 
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
               minlength="2"
               maxlength="50"
               aria-describedby="name-error"
@@ -62,20 +72,29 @@
             <label for="email"
               >メールアドレス <span class="required">*</span></label
             >
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              required 
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
               maxlength="100"
               aria-describedby="email-error"
             />
-            <div id="email-error" class="error-message" aria-live="polite"></div>
+            <div
+              id="email-error"
+              class="error-message"
+              aria-live="polite"
+            ></div>
           </div>
 
           <div class="form-group">
             <label for="subject">件名 <span class="required">*</span></label>
-            <select id="subject" name="subject" required aria-describedby="subject-error">
+            <select
+              id="subject"
+              name="subject"
+              required
+              aria-describedby="subject-error"
+            >
               <option value="">選択してください</option>
               <option value="general">一般的なお問い合わせ</option>
               <option value="work">お仕事のご依頼</option>
@@ -83,23 +102,31 @@
               <option value="technical">技術的な質問</option>
               <option value="other">その他</option>
             </select>
-            <div id="subject-error" class="error-message" aria-live="polite"></div>
+            <div
+              id="subject-error"
+              class="error-message"
+              aria-live="polite"
+            ></div>
           </div>
 
           <div class="form-group">
             <label for="message"
               >メッセージ <span class="required">*</span></label
             >
-            <textarea 
-              id="message" 
-              name="message" 
-              rows="8" 
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
               required
               minlength="10"
               maxlength="1000"
               aria-describedby="message-error"
             ></textarea>
-            <div id="message-error" class="error-message" aria-live="polite"></div>
+            <div
+              id="message-error"
+              class="error-message"
+              aria-live="polite"
+            ></div>
           </div>
 
           <div class="form-actions">

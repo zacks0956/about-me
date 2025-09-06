@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>アーリ - League of Legends</title>
+    <title>アーリ - League of Legends | わたしの自己紹介サイト</title>
+    <meta name="description" content="League of Legendsのアーリについて詳しく紹介。九尾の狐の魅力的なスキル構成とプレイスタイルを解説。" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +15,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <header class="header">
+  <body class="body">
+    <header class="header">
     <h1>MY HOMEPAGE</h1>
     <nav class="nav">
       <ul>
@@ -30,13 +32,15 @@
     <div class="lol-background-switcher">
       <img
         src="images/skin/ahri-kda.jpg"
-        alt="アーリ K/DA スキン"
+        alt="アーリ K/DA スキン - 九尾の狐"
         class="bg-image bg-image-1 active"
+        loading="lazy"
       />
       <img
         src="images/background/lol-background.jpg"
-        alt="League of Legends 背景画像"
+        alt="League of Legends 背景画像 - アーリ"
         class="bg-image bg-image-2"
+        loading="lazy"
       />
     </div>
 
@@ -60,22 +64,24 @@
         <div class="slideshow-container">
           <img
             src="images/skin/ahri-kda.jpg"
-            alt="Ahri KDA Skin"
+            alt="アーリ K/DA スキン - 人気のポップスタースキン"
             class="slide-image active"
+            loading="lazy"
           />
           <img
             src="images/background/lol-background.jpg"
-            alt="Ahri Icon"
+            alt="アーリ ゲーム内画像 - 九尾の狐の魅力"
             class="slide-image"
+            loading="lazy"
           />
 
           <div class="slideshow-controls">
-            <button class="prev-btn">‹</button>
+            <button class="prev-btn" aria-label="前の画像">‹</button>
             <div class="slideshow-indicators">
-              <div class="indicator active"></div>
-              <div class="indicator"></div>
+              <div class="indicator active" aria-label="1枚目の画像"></div>
+              <div class="indicator" aria-label="2枚目の画像"></div>
             </div>
-            <button class="next-btn">›</button>
+            <button class="next-btn" aria-label="次の画像">›</button>
           </div>
         </div>
       </div>

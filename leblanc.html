@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ルブラン - League of Legends</title>
+    <title>ルブラン - League of Legends | わたしの自己紹介サイト</title>
+    <meta
+      name="description"
+      content="League of Legendsのルブラン（欺きの魔術師）について詳しく紹介。スキル構成、プレイスタイル、戦略などを解説。"
+    />
+    <meta property="og:title" content="ルブラン - 欺きの魔術師" />
+    <meta
+      property="og:description"
+      content="League of Legendsのルブラン（欺きの魔術師）について詳しく紹介。スキル構成、プレイスタイル、戦略などを解説。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/skin/leblanc.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,29 +25,38 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <header class="header">
-    <h1>MY HOMEPAGE</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="index.html">🏠 HOME</a></li>
-        <li><a href="games.html">🎮 GAMES</a></li>
-        <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <body class="body">
+    <header class="header">
+      <h1>MY HOMEPAGE</h1>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" aria-label="ホームページへ移動">🏠 HOME</a>
+          </li>
+          <li>
+            <a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a>
+          </li>
+          <li>
+            <a href="table-tennis.html" aria-label="卓球ページへ移動"
+              >🏓 TABLE TENNIS</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <!-- 背景画像の切り替え -->
     <div class="lol-background-switcher">
       <img
         src="images/skin/leblanc.jpg"
-        alt="LoL Background 1"
+        alt="ルブラン デフォルトスキン - 欺きの魔術師"
         class="bg-image bg-image-1 active"
+        loading="lazy"
       />
       <img
         src="images/skin/lebran-skin.jpg"
-        alt="LoL Background 2"
+        alt="ルブラン 特別スキン - 黒薔薇の指導者"
         class="bg-image bg-image-2"
+        loading="lazy"
       />
     </div>
 
@@ -60,22 +80,24 @@
         <div class="slideshow-container">
           <img
             src="images/skin/leblanc.jpg"
-            alt="Leblanc Skin"
+            alt="ルブラン デフォルトスキン - 欺きの魔術師"
             class="slide-image active"
+            loading="lazy"
           />
           <img
             src="images/skin/lebran-skin.jpg"
-            alt="Leblanc Alt Skin"
+            alt="ルブラン 特別スキン - 黒薔薇の指導者"
             class="slide-image"
+            loading="lazy"
           />
 
           <div class="slideshow-controls">
-            <button class="prev-btn">‹</button>
+            <button class="prev-btn" aria-label="前の画像">‹</button>
             <div class="slideshow-indicators">
-              <div class="indicator active"></div>
-              <div class="indicator"></div>
+              <div class="indicator active" aria-label="1枚目の画像"></div>
+              <div class="indicator" aria-label="2枚目の画像"></div>
             </div>
-            <button class="next-btn">›</button>
+            <button class="next-btn" aria-label="次の画像">›</button>
           </div>
         </div>
       </div>
@@ -105,7 +127,11 @@
       </div>
 
       <div class="back-to-games-container">
-        <a href="league-of-legends.html" class="back-to-games-btn">
+        <a
+          href="league-of-legends.html"
+          class="back-to-games-btn"
+          aria-label="League of Legendsページに戻る"
+        >
           ← League of Legends に戻る
         </a>
       </div>

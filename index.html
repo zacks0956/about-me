@@ -12,18 +12,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Philosopher&family=Bitcount+Grid+Double:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
-  <header class="header">
+  <body class="body">
+    <header class="header">
     <h1>わたしの自己紹介サイト</h1>
     <nav class="nav">
       <ul>
@@ -43,12 +40,21 @@
         loop
         playsinline
         class="bg-video active"
+        aria-label="背景動画1"
       >
-        <source src="images/movie.mp4" type="video/mp4" />
+        <source src="images/counter.mov" type="video/mp4" />
         お使いのブラウザは動画をサポートしていません。
       </video>
-      <video id="video2" autoplay muted loop playsinline class="bg-video">
-        <source src="images/counter.mov" type="video/mp4" />
+      <video 
+        id="video2" 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        class="bg-video"
+        aria-label="背景動画2"
+      >
+        <source src="images/yoko.mov" type="video/mp4" />
         お使いのブラウザは動画をサポートしていません。
       </video>
     </div>
@@ -62,7 +68,11 @@
         <div class="combined-content">
           <div class="photo-section">
             <div class="photo-box profile-box">
-              <img src="images/profile.jpeg" />
+              <img 
+                src="images/profile.jpeg" 
+                alt="プロフィール写真 - 京都すばる高校出身"
+                loading="lazy"
+              />
             </div>
           </div>
           <div class="text-section">
@@ -80,8 +90,8 @@
             <div class="hobbies-text">
               <h3>MY FAVORITE</h3>
               <ul>
-                <li><a href="games.html">🎮 GAMES</a></li>
-                <li><a href="table-tennis.html">🏓 TABLE TENNIS</a></li>
+                <li><a href="games.html" aria-label="ゲームページへ移動">🎮 GAMES</a></li>
+                <li><a href="table-tennis.html" aria-label="卓球ページへ移動">🏓 TABLE TENNIS</a></li>
               </ul>
             </div>
           </div>
